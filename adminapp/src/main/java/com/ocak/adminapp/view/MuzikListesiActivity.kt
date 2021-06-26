@@ -11,11 +11,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.adapter.MuzikListesiAdapter
-import com.ocak.adminapp.adapter.YemekListesiAdapter
+
 import com.ocak.adminapp.model.Muzik
-import com.ocak.adminapp.model.Yemek
+
 import kotlinx.android.synthetic.main.activity_muzik_listesi.*
-import kotlinx.android.synthetic.main.activity_yemek_listesi.*
+
 
 class MuzikListesiActivity : AppCompatActivity() {
 

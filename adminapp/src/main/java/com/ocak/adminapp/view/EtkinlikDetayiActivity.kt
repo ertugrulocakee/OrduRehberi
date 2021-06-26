@@ -23,7 +23,7 @@ import com.ocak.adminapp.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_etkinlik_detayi.*
 import kotlinx.android.synthetic.main.activity_sanayi_detayi.*
-import kotlinx.android.synthetic.main.activity_sanayi_detayi.sanayiyeRotaYap
+
 import java.util.*
 
 class EtkinlikDetayiActivity : AppCompatActivity() {

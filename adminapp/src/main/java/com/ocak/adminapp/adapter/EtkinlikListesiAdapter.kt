@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.model.Etkinlik
-import com.ocak.adminapp.model.Spor
+
 import com.ocak.adminapp.view.EtkinlikDetayiActivity
-import com.ocak.adminapp.view.SporDetayiActivity
+
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.recycler_row_etkinlik.view.*
-import kotlinx.android.synthetic.main.recycler_row_spor.view.*
+
 
 class EtkinlikListesiAdapter (var etkinlikList : ArrayList<Etkinlik>) : RecyclerView.Adapter<EtkinlikListesiAdapter.EtkinlikListesiViewHolder>(){
 

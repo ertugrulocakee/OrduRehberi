@@ -20,7 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.ocak.adminapp.R
 import kotlinx.android.synthetic.main.activity_egitim_olustur.*
-import kotlinx.android.synthetic.main.activity_sanayi_olustur.*
+
 
 class OkulOlusturActivity : AppCompatActivity() {
 

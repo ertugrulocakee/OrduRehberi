@@ -8,12 +8,12 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
-import com.ocak.adminapp.model.Yemek
+
 import com.ocak.adminapp.model.Yetkili
-import com.ocak.adminapp.view.YemekDetayiActivity
+
 import com.ocak.adminapp.view.YetkiliDetayiActivity
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.recycler_row_yemek.view.*
+
 import kotlinx.android.synthetic.main.recycler_row_yetkili.view.*
 
 class YetkiliListesiAdapter (var yetkiliList : ArrayList<Yetkili>) : RecyclerView.Adapter<YetkiliListesiAdapter.YetkiliListesiViewHolder>(){

@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.ocak.adminapp.R
-import com.ocak.adminapp.adapter.IstasyonYorumlariAdapter
+
 import com.ocak.adminapp.adapter.MekanYorumlariAdapter
-import com.ocak.adminapp.model.IstasyonYorumlari
+
 import com.ocak.adminapp.model.MekanYorumlari
-import kotlinx.android.synthetic.main.activity_istasyon_yorumlari.*
+
 import kotlinx.android.synthetic.main.activity_mekan_yorumlari.*
 
 class MekanYorumlariActivity : AppCompatActivity() {

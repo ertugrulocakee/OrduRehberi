@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
-import com.ocak.adminapp.adapter.YemekListesiAdapter
+
 import com.ocak.adminapp.adapter.YetkiliListesiAdapter
-import com.ocak.adminapp.model.Yemek
+
 import com.ocak.adminapp.model.Yetkili
-import kotlinx.android.synthetic.main.activity_yemek_listesi.*
+
 import kotlinx.android.synthetic.main.activity_yetkili_listesi.*
 
 class YetkiliListesiActivity : AppCompatActivity() {

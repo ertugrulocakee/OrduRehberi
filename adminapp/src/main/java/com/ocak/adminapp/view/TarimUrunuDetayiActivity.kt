@@ -6,7 +6,7 @@ import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_hayvan_detayi.*
+
 import kotlinx.android.synthetic.main.activity_tarim_urunu_detayi.*
 
 class TarimUrunuDetayiActivity : AppCompatActivity() {

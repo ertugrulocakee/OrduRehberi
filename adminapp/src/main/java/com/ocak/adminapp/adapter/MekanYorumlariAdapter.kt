@@ -8,10 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.model.MekanYorumlari
-import com.ocak.adminapp.model.OtelYorumlari
+
 import kotlinx.android.synthetic.main.recycler_row_mekan_yorumlari.view.*
-import kotlinx.android.synthetic.main.recycler_row_otel_yorumlari.view.*
-import kotlinx.android.synthetic.main.recycler_row_otel_yorumlari.view.reycler_row_otel_yorumlari_kullanici
+
 
 class MekanYorumlariAdapter (var mekanYorumlari : ArrayList<MekanYorumlari>) : RecyclerView.Adapter<MekanYorumlariAdapter.MekanYorumlariViewHolder>(){
 

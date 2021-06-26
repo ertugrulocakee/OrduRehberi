@@ -10,7 +10,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.firebaseordu.R
 import com.ocak.firebaseordu.model.RestorantYorumlari
 import kotlinx.android.synthetic.main.recycler_restorant_yorumlari.view.*
-import kotlinx.android.synthetic.main.recycler_row_otel_yorumlari.view.*
+
 
 class RestorantYorumlariAdapter (var restorantYorumlari : ArrayList<RestorantYorumlari>) : RecyclerView.Adapter<RestorantYorumlariAdapter.RestorantYorumlariViewHolder>(){
 

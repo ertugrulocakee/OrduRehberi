@@ -9,7 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.firebaseordu.R
 import com.ocak.firebaseordu.model.MekanYorumlari
-import kotlinx.android.synthetic.main.recycler_restorant_yorumlari.view.*
+
 import kotlinx.android.synthetic.main.recycler_row_mekan_yorumlari.view.*
 
 class MekanYorumlariAdapter (var mekanYorumlari : ArrayList<MekanYorumlari>) : RecyclerView.Adapter<MekanYorumlariAdapter.MekanYorumlariViewHolder>(){

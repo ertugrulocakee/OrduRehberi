@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.ocak.adminapp.R
 import kotlinx.android.synthetic.main.activity_ulasim_olustur_guncelle.*
-import kotlinx.android.synthetic.main.activity_yemek_olustur.*
+
 import java.util.*
 
 class UlasimOlusturGuncelleActivity : AppCompatActivity() {

@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.model.Restorant
-import com.ocak.adminapp.view.MekanDetayiActivity
+
 import com.ocak.adminapp.view.RestorantDetayiActivity
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.recycler_row_gezikitabi.view.*
+
 import kotlinx.android.synthetic.main.recyler_row_restorant.view.*
 
 class RestorantAdapter(var restorantListesi:ArrayList<Restorant>):RecyclerView.Adapter<RestorantAdapter.RestorantViewHolder>() {

@@ -9,13 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.model.Okul
-import com.ocak.adminapp.model.Sanayi
+
 import com.ocak.adminapp.view.OkulDetayiActivity
-import com.ocak.adminapp.view.SanayiDetayiActivity
+
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.recycler_row_okul.view.*
-import kotlinx.android.synthetic.main.recycler_row_sanayi.view.*
-import kotlinx.android.synthetic.main.recycler_row_sanayi.view.recycler_row_sanayi_ad
+
 
 class OkulListesiAdapter(var okulList : ArrayList<Okul>) : RecyclerView.Adapter<OkulListesiAdapter.OkulListesiViewHolder>(){
 

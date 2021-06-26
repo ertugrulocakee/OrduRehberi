@@ -8,9 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.model.IstasyonYorumlari
-import com.ocak.adminapp.model.RestorantYorumlari
-import kotlinx.android.synthetic.main.recycler_restorant_yorumlari.view.*
-import kotlinx.android.synthetic.main.recycler_restorant_yorumlari.view.reycler_row_restorant_yorumlari_kullanici
+
 import kotlinx.android.synthetic.main.recycler_view_istasyon_yorumlari.view.*
 
 class IstasyonYorumlariAdapter (var istasyonYorumlari : ArrayList<IstasyonYorumlari>) : RecyclerView.Adapter<IstasyonYorumlariAdapter.IstasyonYorumlariViewHolder>(){

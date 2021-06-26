@@ -22,7 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_istasyon_detay.*
-import kotlinx.android.synthetic.main.activity_istasyon_detay.istasyonaRotaYap
+
 import kotlinx.android.synthetic.main.activity_sanayi_detayi.*
 import java.util.*
 

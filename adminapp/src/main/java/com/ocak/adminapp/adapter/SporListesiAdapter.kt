@@ -9,13 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.model.Spor
-import com.ocak.adminapp.model.Yemek
+
 import com.ocak.adminapp.view.SporDetayiActivity
-import com.ocak.adminapp.view.YemekDetayiActivity
+
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.recycler_row_spor.view.*
-import kotlinx.android.synthetic.main.recycler_row_yemek.view.*
-import kotlinx.android.synthetic.main.recycler_row_yemek.view.recycler_row_yemek_ad
+
 
 class SporListesiAdapter (var sporList : ArrayList<Spor>) : RecyclerView.Adapter<SporListesiAdapter.SporListesiViewHolder>(){
 

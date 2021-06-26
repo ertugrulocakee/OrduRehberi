@@ -10,7 +10,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.firebaseordu.R
 import com.ocak.firebaseordu.model.OtelYorumlari
 import kotlinx.android.synthetic.main.recycler_row_otel_yorumlari.view.*
-import kotlinx.android.synthetic.main.recycler_view_istasyon_yorumlari.view.*
+
 
 class OtelYorumlariAdapter (var otelYorumlari : ArrayList<OtelYorumlari>) : RecyclerView.Adapter<OtelYorumlariAdapter.OtelYorumlariViewHolder>(){
 

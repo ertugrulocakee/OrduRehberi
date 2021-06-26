@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
-import com.ocak.adminapp.adapter.IstasyonAdapter
+
 import com.ocak.adminapp.adapter.YemekListesiAdapter
-import com.ocak.adminapp.model.IstasyonTanitim
+
 import com.ocak.adminapp.model.Yemek
-import kotlinx.android.synthetic.main.activity_ulasim_list.*
+
 import kotlinx.android.synthetic.main.activity_yemek_listesi.*
 
 class YemekListesiActivity : AppCompatActivity() {

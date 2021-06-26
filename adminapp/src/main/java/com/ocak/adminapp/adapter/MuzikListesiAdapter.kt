@@ -9,13 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.model.Muzik
-import com.ocak.adminapp.model.Yemek
+
 import com.ocak.adminapp.view.MuzikDetayiActivity
-import com.ocak.adminapp.view.YemekDetayiActivity
+
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.recycler_row_muzik.view.*
-import kotlinx.android.synthetic.main.recycler_row_yemek.view.*
-import kotlinx.android.synthetic.main.recycler_row_yemek.view.recycler_row_yemek_ad
+
 
 class MuzikListesiAdapter (var muzikList : ArrayList<Muzik>) : RecyclerView.Adapter<MuzikListesiAdapter.MuzikListesiViewHolder>(){
 

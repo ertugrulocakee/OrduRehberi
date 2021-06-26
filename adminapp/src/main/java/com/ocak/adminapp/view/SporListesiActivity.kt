@@ -11,11 +11,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
 import com.ocak.adminapp.adapter.SporListesiAdapter
-import com.ocak.adminapp.adapter.YemekListesiAdapter
+
 import com.ocak.adminapp.model.Spor
-import com.ocak.adminapp.model.Yemek
+
 import kotlinx.android.synthetic.main.activity_spor_listesi.*
-import kotlinx.android.synthetic.main.activity_yemek_listesi.*
+
 
 class SporListesiActivity : AppCompatActivity() {
 

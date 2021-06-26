@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
-import com.ocak.adminapp.adapter.HayvanListesiAdapter
+
 import com.ocak.adminapp.adapter.MedyaListesiAdapter
-import com.ocak.adminapp.model.Hayvan
+
 import com.ocak.adminapp.model.Medya
-import kotlinx.android.synthetic.main.activity_hayvan_listesi.*
+
 import kotlinx.android.synthetic.main.activity_medya_listesi.*
 import java.util.ArrayList
 

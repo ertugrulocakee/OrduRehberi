@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.ocak.adminapp.R
-import com.ocak.adminapp.adapter.OtelYorumlariAdapter
+
 import com.ocak.adminapp.adapter.RestorantYorumlariAdapter
-import com.ocak.adminapp.model.OtelYorumlari
+
 import com.ocak.adminapp.model.RestorantYorumlari
-import kotlinx.android.synthetic.main.activity_otel_yorumlari.*
+
 import kotlinx.android.synthetic.main.activity_restorant_yorumlari.*
 
 class RestorantYorumlariActivity : AppCompatActivity() {

@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ocak.adminapp.R
-import com.ocak.adminapp.adapter.IstasyonAdapter
+
 import com.ocak.adminapp.adapter.RestorantAdapter
-import com.ocak.adminapp.model.IstasyonTanitim
+
 import com.ocak.adminapp.model.Restorant
 import kotlinx.android.synthetic.main.activity_restorant_listesi.*
-import kotlinx.android.synthetic.main.activity_ulasim_list.*
+
 
 class RestorantListesiActivity : AppCompatActivity() {
 
