@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.MuzikEkleActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/parcaMuzikOlustur"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:onClick="muzikSec"
+                app:srcCompat="@drawable/icons8_add_song_96__1_"></ImageView>
+
+
+
+            <EditText
+                android:id="@+id/parcaAdiOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/muzikAdi"
+                android:maxLength="30"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/parcaTuruOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parcaturu"
+                android:maxLength="15"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/parcaSeslendirenOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parcaseslendiren"
+                android:maxLength="40"
+                android:inputType="text"></EditText>
+
+
+            <Button
+
+                android:id="@+id/muzikOlusturButonu"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Müzik Ekle"
+                android:onClick="muzikEkle"></Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

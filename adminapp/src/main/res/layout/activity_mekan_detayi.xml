@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".view.MekanDetayiActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/mekan_detayi_resim"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/ic_launcher_background"></ImageView>
+
+
+
+        <TextView
+            android:id="@+id/mekan_detayi_ad"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#660099"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"></TextView>
+
+
+        <TextView
+            android:id="@+id/mekan_detayi_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/icons8_museum_24"
+            android:textColor="#660099"
+            android:textSize="18sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/mekan_detayi_aciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:textSize="16sp"></TextView>
+
+
+        <Button
+            android:id="@+id/mekanaRotaYap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Rota belirle"
+            app:icon="@drawable/icons8_track_order_48"></Button>
+
+
+        <EditText
+            android:id="@+id/mekanYorumYapText"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mekanYorumYap"
+            android:maxLength="120"
+            ></EditText>
+
+
+        <TextView
+            android:id="@+id/mekanPuanBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"
+            android:text="@string/mekanPuanBilgilendirme"></TextView>
+
+        <RatingBar
+            android:id="@+id/ratingBarMekan"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/mekanaYorumYapButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yorumButonu"
+            android:onClick="mekanaYorumYap"
+            ></Button>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
+
+
+
+
+</LinearLayout>

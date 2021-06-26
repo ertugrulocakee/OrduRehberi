@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.MedyaOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/medyaResmiOlustur"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/eklegorsel"
+                android:onClick="medyaResmiSec"></ImageView>
+
+
+
+            <EditText
+                android:id="@+id/medyaAdiOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/medya_adi_olustur"
+                android:maxLength="30"
+                android:inputType="text"></EditText>
+
+
+            <TextView
+                android:id="@+id/medyaTuruBilgilendirme"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medya_turu_bilgilendirme"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#660099"></TextView>
+
+
+
+            <RadioGroup
+                android:id="@+id/medyaAlani"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/televizyonButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="medyaTuruSec"
+                    android:text="@string/tv"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radyoButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radyo"
+                    android:onClick="medyaTuruSec"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/gazeteButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gazete"
+                    android:onClick="medyaTuruSec"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/internetButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/internet"
+                    android:onClick="medyaTuruSec"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/televizyonAlani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/tvfrekansOlustur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/frekans"
+                    android:inputType="number"
+                    android:maxLength="5"></EditText>
+
+
+                <EditText
+                    android:id="@+id/tvSrOlustur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/sr"
+                    android:inputType="number"
+                    android:maxLength="5"></EditText>
+
+
+                <RadioGroup
+                    android:id="@+id/fecAlani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/fec1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="fecSec"
+                        android:text="@string/_2_3"></RadioButton>
+
+
+                    <RadioButton
+                        android:id="@+id/fec2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="fecSec"
+                        android:text="@string/_3_4"></RadioButton>
+
+
+                    <RadioButton
+                        android:id="@+id/fec3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="fecSec"
+                        android:text="@string/_5_6"></RadioButton>
+
+                </RadioGroup>
+
+
+                <RadioGroup
+                    android:id="@+id/vhAlani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/vh1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="vhSec"
+                        android:text="@string/v"></RadioButton>
+
+
+                    <RadioButton
+                        android:id="@+id/vh2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="vhSec"
+                        android:text="@string/h"></RadioButton>
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/radyofrekansOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/frekans"
+                android:maxLength="5"
+                android:inputType="numberDecimal"></EditText>
+
+
+            <EditText
+                android:id="@+id/internetWebSitesiOlustur"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/medya_internet"
+                android:maxLength="60"
+                android:inputType="text"></EditText>
+
+
+
+            <EditText
+                android:id="@+id/medyaAciklamaOlustur"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/medya_aciklama"
+                android:maxLength="600"
+                android:inputType="textMultiLine"></EditText>
+
+
+            <Button
+
+                android:id="@+id/medyaOlusturButonu"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medya kuruluşu Oluştur"
+                android:onClick="medyaOlustur"></Button>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

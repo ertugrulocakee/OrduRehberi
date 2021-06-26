@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ocak.adminapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/uygulama_resmi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/uygulama_resmi_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirebaseOrdu">
+        <activity android:name=".view.TestOlusturActivity"></activity>
+        <activity android:name=".view.NeKadarOrdulusunActivity" />
+        <activity android:name=".view.OkulDetayiActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity
+            android:name=".view.MapsActivity8"
+            android:label="@string/title_activity_maps8" />
+        <activity android:name=".view.OkulOlusturActivity" />
+        <activity android:name=".view.OkulListesiActivity" />
+        <activity android:name=".view.EtkinlikDetayiActivity" />
+        <activity
+            android:name=".view.MapsActivity7"
+            android:label="@string/title_activity_maps7" />
+        <activity android:name=".view.EtkinlikOlusturActivity" />
+        <activity android:name=".view.EtkinlikListesiActivity" />
+        <activity android:name=".view.SanayiDetayiActivity" />
+        <activity
+            android:name=".view.MapsActivity6"
+            android:label="@string/title_activity_maps6" />
+        <activity android:name=".view.SanayiOlusturActivity" />
+        <activity android:name=".view.SanayiListesiActivity" />
+        <activity android:name=".view.YetkiliDetayiActivity" />
+        <activity android:name=".view.YetkiliOlusturActivity" />
+        <activity android:name=".view.YetkiliListesiActivity" />
+        <activity android:name=".view.SporDetayiActivity" />
+        <activity android:name=".view.SporOlusturActivity" />
+        <activity android:name=".view.SporListesiActivity" />
+        <activity android:name=".view.UlasimOlusturGuncelleActivity" />
+        <activity android:name=".view.UlasimActivity" />
+        <activity android:name=".view.MedyaDetayiActivity" />
+        <activity android:name=".view.MedyaOlusturActivity" />
+        <activity android:name=".view.MedyaListesiActivity" />
+        <activity android:name=".view.TarimUrunuDetayiActivity" />
+        <activity android:name=".view.TarimUrunuOlusturActivity" />
+        <activity android:name=".view.TarimUrunuListesiActivity" />
+        <activity android:name=".view.HayvanIsiDetayiActivity" />
+        <activity android:name=".view.HayvanIsiOlusturActivity" />
+        <activity android:name=".view.HayvanIsiListesiActivity" />
+        <activity android:name=".view.MuzikDetayiActivity" />
+        <activity android:name=".view.MuzikEkleActivity" />
+        <activity android:name=".view.MuzikListesiActivity" />
+        <activity android:name=".view.YemekDetayiActivity" />
+        <activity android:name=".view.YemekOlusturActivity" />
+        <activity android:name=".view.YemekListesiActivity" />
+        <activity
+            android:name=".view.MapsActivity5"
+            android:label="@string/title_activity_maps5" />
+        <activity
+            android:name=".view.HavaActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.MekanYorumlariActivity" />
+        <activity android:name=".view.IstasyonYorumlariActivity" />
+        <activity android:name=".view.RestorantYorumlariActivity" />
+        <activity android:name=".view.OtelYorumlariActivity" />
+        <activity
+            android:name=".view.AcilisActivity"
+            android:theme="@style/Theme.FirebaseOrdu.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.WebActivity" />
+        <activity android:name=".view.OtelDetayiActivity" />
+        <activity
+            android:name=".view.MapsActivity4"
+            android:label="@string/title_activity_maps4" />
+        <activity android:name=".view.OtelListesiActivity" />
+        <activity android:name=".view.OtelOlusturActivity" />
+        <activity android:name=".view.RestorantDetayiActivity" />
+        <activity android:name=".view.RestorantOlusturActivity" />
+        <activity android:name=".view.RestorantListesiActivity" />
+        <activity android:name=".view.MekanDetayiActivity" />
+        <activity
+            android:name=".view.MapsActivity3"
+            android:label="@string/title_activity_maps3" />
+        <activity
+            android:name=".view.MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+        <activity android:name=".view.GeziMekaniOlusturActivity" />
+        <activity android:name=".view.IstasyonDetayActivity" />
+        <activity
+            android:name=".view.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".view.IstasyonOlusturActivity" />
+        <activity android:name=".view.IstasyonListesiActivity" />
+        <activity
+            android:name=".view.OrduDeneyimPaylasmaActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".view.UygulamaAyarlariActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.EpostaDegisimiActivity" />
+        <activity
+            android:name=".view.OrduSeyahatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.OrduTanitimActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.GeziKitabiActivity" />
+        <activity
+            android:name=".view.KullaniciBilgileriActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.SifreDegistirmeActivity" />
+        <activity android:name=".view.HesapSilmeActivity" />
+        <activity android:name=".view.UygulamaBilgileriActivity" />
+        <activity android:name=".view.OrduDeneyimleriActivity" />
+        <activity android:name=".view.KayitIslemiActivity" />
+        <activity
+            android:name=".view.UygulamaGirisActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

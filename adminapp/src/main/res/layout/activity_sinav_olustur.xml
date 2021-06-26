@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.TestOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <EditText
+            android:id="@+id/soruBirOlustur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruBirAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruBirBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruBirCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruBirDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruBirCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 1 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruBirAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+         <RadioButton
+             android:id="@+id/soruBirA"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="A"
+             android:onClick="cevapBir"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruBirB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapBir"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruBirC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapBir"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruBirD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapBir"></RadioButton>
+
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/soruIkiOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruIkiAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruIkiBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruIkiCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruIkiDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruIkiCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 2 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruIkiAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruIkiA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapIki"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruIkiB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapIki"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruIkiC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapIki"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruIkiD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapIki"></RadioButton>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/soruUcOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruUcAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruUcBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruUcCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruUcDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruUcCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 3 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruUcAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruUcA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapUc"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruUcB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapUc"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruUcC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapUc"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruUcD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapUc"></RadioButton>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/soruDortOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="4.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruDortAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruDortBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruDortCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruDortDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruDortCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 4 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruDortAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruDortA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapDort"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruDortB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapDort"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruDortC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapDort"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruDortD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapDort"></RadioButton>
+
+
+        </RadioGroup>
+
+
+
+        <EditText
+            android:id="@+id/soruBesOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="5.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruBesAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruBesBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruBesCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruBesDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruBesCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 5 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruBesAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruBesA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapBes"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruBesB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapBes"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruBesC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapBes"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruBesD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapBes"></RadioButton>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/soruAltiOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="6.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruAltiAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruAltiBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruAltiCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruAltiDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruAltiCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 6 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruAltiAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruAltiA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapAlti"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruAltiB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapAlti"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruAltiC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapAlti"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruAltiD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapAlti"></RadioButton>
+
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/soruYediOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="7.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruYediAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruYediBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruYediCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruYediDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruYediCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 7 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruYediAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruYediA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapYedi"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruYediB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapYedi"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruYediC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapYedi"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruYediD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapYedi"></RadioButton>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/soruSekizOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="8.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruSekizAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruSekizBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruSekizCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruSekizDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruSekizCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 8 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruSekizAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruSekizA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapSekiz"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruSekizB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapSekiz"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruSekizC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapSekiz"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruSekizD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapSekiz"></RadioButton>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/soruDokuzOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="9.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruDokuzAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruDokuzBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruDokuzCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruDokuzDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruDokuzCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 9 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruDokuzAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruDokuzA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapDokuz"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruDokuzB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapDokuz"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruDokuzC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapDokuz"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruDokuzD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapDokuz"></RadioButton>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/soruOnOlustur"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="10.soruyu yazınız:"
+            android:maxLength="120"
+            android:inputType="text"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/soruOnAOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="A şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruOnBOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="B şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruOnCOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="C şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <EditText
+            android:id="@+id/soruOnDOlustur"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D şıkkını yazınız:"
+            android:maxLength="30"></EditText>
+
+        <TextView
+            android:id="@+id/soruOnCevapBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru 10 için doğru seçeneği tanımlayınız"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+        <RadioGroup
+            android:id="@+id/soruOnAlani"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soruOnA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:onClick="cevapOn"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruOnB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:onClick="cevapOn"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruOnC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:onClick="cevapOn"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/soruOnD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:onClick="cevapOn"></RadioButton>
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/sinavOlusturGuncelleButonu"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Oluştur/Güncelle"
+            android:onClick="sinavOlusturGuncelle"></Button>
+
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

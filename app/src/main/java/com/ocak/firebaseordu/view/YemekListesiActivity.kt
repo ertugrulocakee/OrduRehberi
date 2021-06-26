@@ -1,0 +1,95 @@
+package com.ocak.firebaseordu.view
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.google.firebase.firestore.FirebaseFirestore
+import com.ocak.firebaseordu.R
+import com.ocak.firebaseordu.adapter.YemekListesiAdapter
+import com.ocak.firebaseordu.model.Yemek
+import kotlinx.android.synthetic.main.activity_yemek_listesi.*
+
+class YemekListesiActivity : AppCompatActivity() {
+
+    var yemekListesi = ArrayList<Yemek>()
+
+    private lateinit var database : FirebaseFirestore
+    private  lateinit var recyclerAdapter: YemekListesiAdapter
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_yemek_listesi)
+
+        database= FirebaseFirestore.getInstance()
+
+        verileriAl()
+
+
+        val layoutManager = LinearLayoutManager(this)
+        recyclerViewYemekler.layoutManager = layoutManager
+        recyclerAdapter = YemekListesiAdapter(yemekListesi)
+        recyclerViewYemekler.adapter = recyclerAdapter
+
+
+        swipeRefreshLayout6.setOnRefreshListener(SwipeRefreshLayout.OnRefreshListener {
+
+            verileriAl()
+
+            swipeRefreshLayout6.isRefreshing = false
+
+        })
+
+    }
+
+    fun verileriAl(){
+
+
+        database.collection("Yemekler").addSnapshotListener { snapshot, exception ->
+
+            if(exception != null ){
+                Toast.makeText(this,exception.localizedMessage, Toast.LENGTH_LONG).show()
+            }else{
+
+                if(snapshot != null){
+
+                    if(snapshot.isEmpty == false){
+
+                        val documents = snapshot.documents
+
+                        yemekListesi.clear()
+
+                        for ( document in documents){
+
+
+                            val name = document.get("yemekadi") as String
+                            val gorsel = document.get("yemekgorseli") as String
+                            val yemekId =document.id
+
+                            val indirilen = Yemek(name,gorsel,yemekId)
+
+                            yemekListesi.add(indirilen)
+
+
+                        }
+
+                        recyclerAdapter.notifyDataSetChanged()
+
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+
+    }
+
+}

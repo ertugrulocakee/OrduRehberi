@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238831754566",
+    "project_id": "fir-ordu",
+    "storage_bucket": "fir-ordu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238831754566:android:cb9d5fb49420caafa6d947",
+        "android_client_info": {
+          "package_name": "com.ocak.firebaseordu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238831754566-ma85bkhj4l8u9601tvs28k619e0qh5lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIpBUsBa3V8mu8YL12hbMPr8SV46897j4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238831754566-ma85bkhj4l8u9601tvs28k619e0qh5lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

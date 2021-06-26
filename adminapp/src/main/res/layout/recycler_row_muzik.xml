@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/recycler_row_muzik_gorseli"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/icons8_musical_notes_96"></androidx.appcompat.widget.AppCompatImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/recycler_row_muzik_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ad"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#660099"
+                android:textSize="20sp"></TextView>
+
+
+            <Button
+                android:id="@+id/silMuzikButonu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sil"
+                android:layout_marginTop="20dp">
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

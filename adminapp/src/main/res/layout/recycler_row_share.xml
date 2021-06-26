@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userPicture"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <TextView
+            android:id="@+id/kullaniciadirecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="8"
+            android:text="Kullanıcı Adı"
+            android:textColor="#660099"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/recycler_guncelle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:src="@android:drawable/ic_menu_more"
+            tools:src="@android:drawable/ic_menu_more"
+            android:layout_weight="1"></ImageButton>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gorselrecycler"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ic_launcher_background"></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/puanrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@android:drawable/btn_star_big_on"
+            android:text="Kullanici Puani "
+            android:textColor="#660099"
+            android:textAlignment="center"
+            android:layout_weight="5"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/onayrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="5"
+            android:drawableLeft="@drawable/icons8_suitcase_30"
+            android:text="Tekrar gelmek"
+            android:textAlignment="center"
+            android:textColor="#660099"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yorumrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:text="Kullanıcı Yorumu"
+        android:textSize="16sp"></TextView>
+
+
+
+
+
+
+
+
+</LinearLayout>

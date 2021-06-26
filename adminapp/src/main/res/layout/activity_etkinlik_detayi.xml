@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.EtkinlikDetayiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:id="@+id/etkinlik_detayi_resim"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"></ImageView>
+
+
+            <TextView
+                android:id="@+id/etkinlikdetayi_ad"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ad"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#660099"
+                android:textAlignment="center"></TextView>
+
+
+            <TextView
+                android:id="@+id/etkinlikdetayi_alani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_performance_30"
+                android:text="alan"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/etkinlikdetayi_baslangic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_start_30"
+                android:text="baslangic"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/etkinlikdetayi_bitis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_cancel_30"
+                android:text="bitis"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/etkinlikdetayi_bilgilendirme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/etkinlik_hakkinda"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/etkinlikdetayi_aciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="aciklama"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"></TextView>
+
+
+            <Button
+                android:id="@+id/etkinligeRotaYap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Rota belirle"
+                app:icon="@drawable/icons8_track_order_48"></Button>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

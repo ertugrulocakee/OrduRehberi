@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.YetkiliOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/yetkiliResmiOlustur"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:onClick="yetkiliResmiSec"
+                app:srcCompat="@drawable/yonetcerto"></ImageView>
+
+
+
+            <EditText
+                android:id="@+id/yetkiliAdSoyadOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/yetkili_adsoyad"
+                android:maxLength="40"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/yetkiliUniversiteOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/yetkili_universite"
+                android:maxLength="30"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/yetkiliBolumOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yetkilinin mezun olduğu bölümü yazınız:"
+                android:maxLength="30"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/yetkiliMakamOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yetkilinin bulunduğu makamı yazınız:"
+                android:maxLength="35"
+                android:inputType="text"></EditText>
+
+            <EditText
+                android:id="@+id/yetkiliNereliOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/yetkili_memleket"
+                android:maxLength="30"
+                android:inputType="text"></EditText>
+
+            <EditText
+                android:id="@+id/yetkiliAciklamaOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/yetkili_aciklama"
+                android:maxLength="600"
+                android:inputType="textMultiLine"></EditText>
+
+
+            <Button
+                android:id="@+id/yetkiliDogumTarihiOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğum tarihi seç"></Button>
+
+            <Button
+                android:id="@+id/yetkiliGoreveBaslangicOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Görev başlangıç tarihi seç"></Button>
+
+
+
+            <Button
+
+                android:id="@+id/yetkiliOlusturButonu"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yetkili Olustur"
+                android:onClick="yetkiliOlustur"></Button>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

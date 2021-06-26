@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MuzikDetayiActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/muzikDetayiAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ad"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="#660099"></TextView>
+
+
+            <TextView
+                android:id="@+id/muzikDetayiTur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/icons8_jazz_30"
+                android:text="tur"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/muzikDetayiSeslendiren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/icons8_singing_30"
+                android:text="seslendiren"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+            <ImageView
+                android:id="@+id/muzikResmi"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/icons8_music_512"></ImageView>
+
+            <SeekBar
+                android:id="@+id/muzikIlerleme"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"></SeekBar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/idBtnPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic__play" />
+
+                <!--Button for pausing the audio-->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/idBtnPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_pause" />
+
+                <!--Button for pausing the audio-->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/idBtnStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic__stop" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.IstasyonOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/istasyongorsel"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:onClick="istasyonGorseliEkle"
+            app:srcCompat="@drawable/eklegorsel"></androidx.appcompat.widget.AppCompatImageView>
+
+
+        <EditText
+            android:id="@+id/istasyonadi"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:hint="@string/istasyonadi"
+            android:textSize="18sp"
+            android:maxLength="25"
+            ></EditText>
+
+
+
+
+        <EditText
+            android:id="@+id/istasyontipi"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/istasyonTipi"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:maxLength="15"></EditText>
+
+
+        <EditText
+            android:id="@+id/istasyon_kapasite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/istasyonkapasite"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:maxLength="10"></EditText>
+
+
+
+
+        <EditText
+            android:id="@+id/istasyon_Telefonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/istasyonTelefon"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:maxLength="20"></EditText>
+
+
+
+        <EditText
+            android:id="@+id/istasyonOlusturWeb"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="60"
+            android:textSize="18sp"
+            android:hint="@string/istasyonOlusturWeb"
+            ></EditText>
+
+
+
+        <Button
+            android:id="@+id/faaliyetgun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"></Button>
+
+
+        <Button
+            android:id="@+id/istasyonEkleButon"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/istasyonekle"
+            android:onClick="istasyonuEkle">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

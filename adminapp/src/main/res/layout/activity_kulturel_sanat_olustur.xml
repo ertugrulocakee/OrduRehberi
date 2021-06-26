@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.EtkinlikOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/kulturelSanatResmiOlustur"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/eklegorsel"
+                android:onClick="kulturelSanatResmiSec"></ImageView>
+
+
+
+            <EditText
+                android:id="@+id/kulturelSanatAdiOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etkinlik_adi"
+                android:maxLength="40"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/kulturelSanatTuruOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etkinlik_alan"
+                android:maxLength="20"
+                android:inputType="text"></EditText>
+
+            <EditText
+                android:id="@+id/kulturelSanatAciklamaOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etkinlik_aciklama"
+                android:maxLength="600"
+                android:inputType="textMultiLine"></EditText>
+
+           <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center">
+
+
+               <Button
+
+                   android:id="@+id/etkinlikBaslangicTarihiOlusturButonu"
+                   android:layout_marginTop="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Etkinlik başlangıç tarihi seç"
+                   android:layout_marginRight="5dp"
+                   android:layout_weight="1"></Button>
+
+               <Button
+
+                   android:id="@+id/etkinlikBitisTarihiOlusturButonu"
+                   android:layout_marginTop="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Etkinlik bitiş tarihi seç"
+                   android:layout_marginLeft="5dp"
+                   android:layout_weight="1"></Button>
+
+
+           </LinearLayout>
+
+
+            <Button
+
+                android:id="@+id/etkinlikOlusturButonu"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etkinlik Oluştur"
+                android:onClick="etkinlikOlustur"></Button>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.IstasyonDetayActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <ImageView
+            android:id="@+id/image_istasyon"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"></ImageView>
+
+
+        <TextView
+            android:id="@+id/istasyon_ad"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#660099"
+            android:textAlignment="center"></TextView>
+
+
+        <TextView
+            android:id="@+id/istasyon_tipi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/icons8_steering_wheel_24"
+            android:text="tip"
+            android:textColor="#660099"
+            android:textSize="18sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/istasyon_kapasite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/icons8_counter_24"
+            android:text="kapasite"
+            android:textColor="#660099"
+            android:textSize="18sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/istasyon_faaliyet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/icons8_calendar_24"
+            android:text="tarih"
+            android:textColor="#660099"
+            android:textSize="18sp"></TextView>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center">
+
+           <Button
+               android:id="@+id/button_istasyonArama"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="5dp"
+               app:icon="@drawable/icons8_call_48"></Button>
+
+           <Button
+               android:id="@+id/istasyonDetayiWebButonu"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               app:icon="@drawable/icons8_website_48"></Button>
+
+
+           <Button
+               android:id="@+id/istasyonaRotaYap"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="5dp"
+               app:icon="@drawable/icons8_track_order_48"></Button>
+
+
+
+       </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/istasyonYorumYapText"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/istasyonYorumYap"
+            android:maxLength="120"
+            ></EditText>
+
+
+        <TextView
+            android:id="@+id/istasyonPuanBilgilendirme"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#660099"
+            android:textAlignment="center"
+            android:text="@string/istasyonPuanBilgilendirme"></TextView>
+
+        <RatingBar
+            android:id="@+id/ratingBarIstasyon"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/istasyonaYorumYapButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yorumButonu"
+            android:onClick="istasyonaYorumYap"
+            ></Button>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+</LinearLayout>

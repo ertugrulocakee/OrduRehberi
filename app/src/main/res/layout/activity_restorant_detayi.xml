@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".view.RestorantDetayiActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/restorantDetayiResim"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/ic_launcher_background">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/restorantDetayiAd"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="restorantadi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#660099">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/restorantDetayiTipi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_restaurant_30"
+                android:text="restoranttipi"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/restorantDetayiMenuBilgilendirme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/menuBilgilendirme"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#660099"></TextView>
+
+
+
+            <ImageView
+                android:id="@+id/restorantDetayiMenu"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/ic_launcher_background">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/restorantDetayiBilgilendirme"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restorantDetayiOlanaklarBilgilendirme"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#660099"
+                android:textSize="18sp"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/restorantDetayiIcMekan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_restaurant_building_30"
+                android:text="IcMekan"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiDisMekan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_compost_heap_30"
+                android:text="DisMekan"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiYerindeServis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_food_service_30"
+                android:text="YerindeServis"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiPaketServis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_motorcycle_30"
+                android:text="PaketServis"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiGelAl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_walking_30"
+                android:text="GelAl"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiSigaraAlani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_smoking_30"
+                android:text="SigaraAlani"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiCocukAlani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_children_30"
+                android:text="CocukAlani"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiWifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_wi_fi_30"
+                android:text="Wifi"
+                android:textSize="18sp">
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/restorantDetayiCalismaSaatleriBilgilendirme"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restorantDetayiSaatBilgilendirme"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#660099"></TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiPazartesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_monday_26"
+                android:text="pazartesi"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiSali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_tuesday_26"
+                android:text="sali"
+                android:textSize="16sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/restorantDetayiCarsamba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_wednesday_26"
+                android:text="carsamba"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiPersembe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_thursday_26"
+                android:text="persembe"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiCuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_friday_26"
+                android:text="cuma"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiCumartesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_saturday_26"
+                android:text="cumartesi"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/restorantDetayiPazar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_sunday_26"
+                android:text="pazar"
+                android:textSize="16sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/restorantDetayiOrtalamaTutar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/icons8_money_24"
+                android:text="ortalamatutar"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/restorantDetayiTelefonButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    app:icon="@drawable/icons8_call_48"></Button>
+
+
+                <Button
+                    android:id="@+id/restorantaRotaYap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    app:icon="@drawable/icons8_track_order_48"></Button>
+
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/restorantYorumYapText"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/restorantYorumYap"
+                android:maxLength="120"
+                ></EditText>
+
+
+            <TextView
+                android:id="@+id/restorantPuanBilgilendirme"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#660099"
+                android:textAlignment="center"
+                android:text="@string/restorantPuanBilgilendirme"></TextView>
+
+            <RatingBar
+                android:id="@+id/ratingBarRestorant"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/restorantaYorumYapButton"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yorumButonu"
+                android:onClick="restorantaYorumYap"
+                ></Button>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

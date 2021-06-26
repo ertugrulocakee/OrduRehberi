@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sinav" android:title="@string/ordusinav"></item>
+
+    <item android:id="@+id/ordu"
+        android:title="@string/tanitim"></item>
+
+    <item android:id="@+id/ordulokasyonlar"
+        android:title="@string/lokasyo"></item>
+
+
+    <item android:id="@+id/useroptions"
+        android:title="@string/usettings"></item>
+
+    <item android:id="@+id/appOptions"
+        android:title="@string/appsettings"></item>
+
+    <item android:id="@+id/cikisYap"
+        android:title="@string/cikis"></item>
+
+
+</menu>

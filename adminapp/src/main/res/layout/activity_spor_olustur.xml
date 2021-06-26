@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.SporOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/sporResmiOlustur"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/eklegorsel"
+                android:onClick="sporResmiSec"></ImageView>
+
+
+            <TextView
+                android:id="@+id/bireyselTakimBilgilendirme"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bireysel sporcu veya spor takımı arasında bir seçim yapın"
+                android:textColor="#660099"
+                android:textAlignment="center"
+                android:textStyle="bold"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/sporAlani"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/bireyselButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="bireyselTakimSec"
+                    android:text="@string/bireysel"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/takimButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/takim"
+                    android:onClick="bireyselTakimSec"
+                    ></RadioButton>
+
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/sporAdiOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/takimsporcuadi"
+                android:maxLength="30"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/sporTuruOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/takimsporcualani"
+                android:maxLength="15"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/sporAciklamaOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/takimsporcuaciklama"
+                android:maxLength="600"
+                android:inputType="textMultiLine"></EditText>
+
+
+
+            <Button
+
+                android:id="@+id/sporOlusturButonu"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sporcu/Takım Olustur"
+                android:onClick="sporOlustur"></Button>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

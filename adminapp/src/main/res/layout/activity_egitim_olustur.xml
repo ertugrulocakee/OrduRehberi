@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.OkulOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/egitimResmiOlustur"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/eklegorsel"
+                android:onClick="egitimResmiSec"></ImageView>
+
+            <TextView
+                android:id="@+id/okulSeviyesiBilgilendirme"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/okul_seviyesi"
+                android:textStyle="bold"
+                android:textColor="#660099"
+                android:textAlignment="center"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/okulturuAlani"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ilkokulButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="okulTuruSec"
+                    android:text="@string/ilkokul"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ortaokulButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ortaokul"
+                    android:onClick="okulTuruSec"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/liseButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lise"
+                    android:onClick="okulTuruSec"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/universiteButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/niversite"
+                    android:onClick="okulTuruSec"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/okulTipiBilgilendirme"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/okul_tipi"
+                android:textStyle="bold"
+                android:textColor="#660099"
+                android:textAlignment="center"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/devletOzelAlani"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/devletButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="okulSec"
+                    android:text="@string/devlet_okulu"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ozelButonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ozel_okul"
+                    android:onClick="okulSec"
+                    ></RadioButton>
+
+
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/okulAdiOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/okul_ad"
+                android:maxLength="40"
+                android:inputType="text"></EditText>
+
+
+            <EditText
+                android:id="@+id/okulTelefonOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/okul_telefon"
+                android:maxLength="20"
+                android:inputType="phone"></EditText>
+
+
+            <EditText
+                android:id="@+id/okulWebOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/okulweb"
+                android:maxLength="60"
+                android:inputType="text"></EditText>
+
+            <EditText
+                android:id="@+id/okulAciklamaOlustur"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/okulhakkinda"
+                android:maxLength="600"
+                android:inputType="textMultiLine"></EditText>
+
+            <Button
+
+                android:id="@+id/okulOlusturButonu"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Okul Oluştur"
+                android:onClick="okulOlustur"></Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.YemekOlusturActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="vertical">
+
+
+           <ImageView
+               android:id="@+id/yemekResmiOlustur"
+               android:layout_width="300dp"
+               android:layout_height="250dp"
+               app:srcCompat="@drawable/eklegorsel"
+               android:onClick="yemekResmiSec"></ImageView>
+
+
+
+         <EditText
+             android:id="@+id/yemekAdiOlustur"
+             android:layout_marginTop="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="@string/yemekAdi"
+             android:maxLength="30"
+             android:inputType="text"></EditText>
+
+
+           <EditText
+               android:id="@+id/yemekTuruOlustur"
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/yemekturu"
+               android:maxLength="15"
+               android:inputType="text"></EditText>
+
+
+           <EditText
+               android:id="@+id/yemekMalzemesiOlustur"
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/yemekmalzemesi"
+               android:maxLength="200"
+               android:inputType="textMultiLine"></EditText>
+
+
+           <EditText
+               android:id="@+id/yemekTarifiOlustur"
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/yemektarifi"
+               android:maxLength="600"
+               android:inputType="textMultiLine"></EditText>
+
+
+
+           <Button
+
+               android:id="@+id/yemekOlusturButonu"
+               android:layout_marginTop="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Yemek Olustur"
+               android:onClick="yemekOlustur"></Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

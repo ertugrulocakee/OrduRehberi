@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.UlasimOlusturGuncelleActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+
+            <ImageView
+                android:id="@+id/orduNasilGidilirResimOlustur"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/eklegorsel"
+                android:onClick="resimSecVeyaGuncelle"></ImageView>
+
+
+
+
+            <EditText
+                android:id="@+id/orduNasilGidilirTextDuzenle"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ordu_nasil_gidilir_aciklama"
+                android:maxLength="600"
+                android:inputType="textMultiLine"></EditText>
+
+
+
+            <Button
+                android:id="@+id/nasilGidilirButon"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onayla/Güncelle"
+                android:onClick="onaylaVeyaGuncelle"></Button>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

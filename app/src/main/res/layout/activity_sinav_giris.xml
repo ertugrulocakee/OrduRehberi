@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".view.NeKadarOrdulusunActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+            <TextView
+                android:id="@+id/testBir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 1"></TextView>
+
+            <TextView
+                android:id="@+id/testBirAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testBirBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testBirCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testBirDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+            <RadioGroup
+                android:id="@+id/testBirCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testBirA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testBirCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testBirB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testBirCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testBirC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testBirCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testBirD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testBirCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testIki"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 2"></TextView>
+
+            <TextView
+                android:id="@+id/testIkiAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testIkiBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testIkiCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testIkiDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/testIkiCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testIkiA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testIkiCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testIkiB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testIkiCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testIkiC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testIkiCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testIkiD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testIkiCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testUc"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 3"></TextView>
+
+            <TextView
+                android:id="@+id/testUcAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testUcBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testUcCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testUcDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/testUcCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testUcA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testUcCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testUcB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testUcCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testUcC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testUcCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testUcD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testUcCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testDort"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 4"></TextView>
+
+            <TextView
+                android:id="@+id/testDortAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testDortBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testDortCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testDortDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/testDortCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testDortA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testDortCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testDortB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testDortCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testDortC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testDortCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testDortD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testDortCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testBes"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 5"></TextView>
+
+            <TextView
+                android:id="@+id/testBesAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testBesBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testBesCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testBesDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/testBesCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testBesA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testBesCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testBesB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testBesCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testBesC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testBesCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testBesD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testBesCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testAlti"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 6"></TextView>
+
+            <TextView
+                android:id="@+id/testAltiAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testAltiBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testAltiCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testAltiDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+
+            <RadioGroup
+                android:id="@+id/testAltiCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testAltiA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testAltiCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testAltiB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testAltiCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testAltiC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testAltiCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testAltiD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testAltiCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testYedi"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 7"></TextView>
+
+            <TextView
+                android:id="@+id/testYediAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testYediBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testYediCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testYediDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/testYediCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testYediA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testYediCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testYediB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testYediCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testYediC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testYediCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testYediD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testYediCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testSekiz"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 8"></TextView>
+
+            <TextView
+                android:id="@+id/testSekizAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testSekizBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testSekizCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testSekizDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/testSekizCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testSekizA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testSekizCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testSekizB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testSekizCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testSekizC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testSekizCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testSekizD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testSekizCevap"></RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/testDokuz"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 9"></TextView>
+
+            <TextView
+                android:id="@+id/testDokuzAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testDokuzBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testDokuzCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testDokuzDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+            <RadioGroup
+                android:id="@+id/testDokuzCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testDokuzA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testDokuzCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testDokuzB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testDokuzCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testDokuzC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testDokuzCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testDokuzD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testDokuzCevap"></RadioButton>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/testOn"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soru 10"></TextView>
+
+            <TextView
+                android:id="@+id/testOnAText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A)"></TextView>
+
+            <TextView
+                android:id="@+id/testOnBText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B)"></TextView>
+
+            <TextView
+                android:id="@+id/testOnCText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C)"></TextView>
+
+            <TextView
+                android:id="@+id/testOnDText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D)"></TextView>
+
+
+
+            <RadioGroup
+                android:id="@+id/testOnCevapAlani"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/testOnA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:onClick="testOnCevap"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/testOnB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:onClick="testOnCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testOnC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:onClick="testOnCevap"></RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/testOnD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:onClick="testOnCevap"></RadioButton>
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/sinavSonucButonu"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Sonucuna Bak"
+                android:onClick="sinavSonuc"></Button>
+
+
+            <TextView
+                android:id="@+id/sinavSonucBilgisi"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sonuc"
+                android:textColor="#660099"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

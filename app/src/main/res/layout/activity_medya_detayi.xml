@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".view.MedyaDetayiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/medya_detayi_resim"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/ic_launcher_background"></ImageView>
+
+
+            <TextView
+                android:id="@+id/medya_detayi_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="#660099"
+                android:textStyle="bold"
+                android:textSize="20sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/medya_detayi_turu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_media_24"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/medya_detayi_frekans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icons8_frequency_24"
+                android:textColor="#660099"
+                android:textSize="18sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/medya_detayi_aciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:textSize="16sp"></TextView>
+
+
+            <Button
+                android:id="@+id/medya_detayi_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="medyaWebeGit"
+                android:text="Web adresine git"
+                app:icon="@drawable/icons8_website_48"></Button>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

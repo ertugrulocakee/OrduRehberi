@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".view.OtelDetayiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center">
+
+
+           <ImageView
+               android:id="@+id/otelDetayiGorseli"
+               android:layout_width="match_parent"
+               android:layout_height="250dp"
+               android:src="@drawable/ic_launcher_background"></ImageView>
+
+
+          <TextView
+              android:id="@+id/otelDetayiAd"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="otelad"
+              android:textAlignment="center"
+              android:textSize="20sp"
+              android:textColor="#660099"
+              android:textStyle="bold"></TextView>
+
+
+           <TextView
+               android:id="@+id/otelDetayiYildiz"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@android:drawable/btn_star_big_on"
+               android:text="otelyildiz"
+               android:textColor="#660099"
+               android:textSize="18sp"></TextView>
+
+
+           <TextView
+               android:id="@+id/otelAciklamaBilgilendirme"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:text="@string/otelAciklama"
+               android:textStyle="bold"
+               android:textSize="18sp"
+               android:textColor="#660099"></TextView>
+
+
+
+           <TextView
+               android:id="@+id/otelDetayiAciklama"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="otelaciklama"
+               android:justificationMode="inter_word"
+               android:textSize="16sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelOlanaklariBilgilendirme"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/otelOlanaklariBilgilendirme"
+               android:textSize="18sp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:textColor="#660099"></TextView>
+
+
+           <TextView
+               android:id="@+id/otelDetayiHavuz"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_outdoor_swimming_pool_30"
+               android:text="otelHavuzBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiSpaMasaj"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_massage_30"
+               android:text="otelSpaMasajBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiSporSalonu"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_treadmill_30"
+               android:text="otelSporSalonuBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiSauna"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_bathhouse_32"
+               android:text="otelSaunaBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiWifi"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_wi_fi_30"
+               android:text="otelWifiBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiCamasirhane"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_washing_machine_30"
+               android:text="otelCamasirhaneBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiRestorant"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_restaurant_30"
+               android:text="otelRestorantBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiBar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_mini_bar_30"
+               android:text="otelBarBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiAcikBufeKahvalti"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_breakfast_30"
+               android:text="otelAcikBufeKahvaltiBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiParkAlani"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_parking_30"
+               android:text="otelParkAlaniBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiToplantiOdasi"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_meeting_room_30"
+               android:text="otelToplantiOdasiBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiEngelliUygunluk"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_handicapped_30"
+               android:text="otelEngelliUygunlukBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiCocukBilgisi"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_children_30"
+               android:text="otelCocukBilgisi"
+               android:textSize="18sp"></TextView>
+
+           <TextView
+               android:id="@+id/otelDetayiEvcilHayvanUygunluk"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@drawable/icons8_pet_commands_follow_30"
+               android:text="otelEvcilHayvanBilgisi"
+               android:textSize="18sp"></TextView>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center">
+
+
+               <Button
+                   android:id="@+id/otelDetayiTelefonButonu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginRight="5dp"
+                   app:icon="@drawable/icons8_call_48"></Button>
+
+               <Button
+                   android:id="@+id/otelDetayiWebButonu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   app:icon="@drawable/icons8_website_48"></Button>
+
+               <Button
+                   android:id="@+id/oteleRotaYap"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="5dp"
+                   app:icon="@drawable/icons8_track_order_48"></Button>
+
+
+
+           </LinearLayout>
+
+
+
+           <EditText
+               android:id="@+id/oteleYorumYapText"
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/oteleYorumYap"
+               android:maxLength="120"
+               ></EditText>
+
+
+           <TextView
+               android:id="@+id/otelPuanBilgilendirme"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textSize="18sp"
+               android:textColor="#660099"
+               android:textAlignment="center"
+               android:text="@string/otelPuanBilgilendirme">
+           </TextView>
+
+           <RatingBar
+               android:id="@+id/ratingBarOtel"
+               android:layout_marginTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+
+           <Button
+               android:id="@+id/oteleYorumYapButton"
+               android:layout_marginTop="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/yorumButonu"
+               android:onClick="oteleYorumYap"
+               ></Button>
+
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

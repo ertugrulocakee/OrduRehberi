@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".view.OrduSeyahatActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonBus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F3E5F5"
+        android:onClick="ulasim"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonRestaurant"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonHotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_bus_64" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHotel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F3E5F5"
+        android:onClick="otel"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_hotel_building_100" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRestaurant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F3E5F5"
+        android:onClick="restorant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBus"
+        app:srcCompat="@drawable/icons8_restaurant_96" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F3E5F5"
+        android:onClick="gezirehberi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRestaurant"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonHotel"
+        app:srcCompat="@drawable/icons8_travel_book_100" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/bus"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#660099"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBus"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonBus"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonBus"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonBus"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/hotel"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#660099"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonHotel"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonHotel"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBus"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonHotel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/restaurant"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#660099"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonRestaurant"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRestaurant"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRestaurant"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBus"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/travel_book"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#660099"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRestaurant"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonHotel"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
